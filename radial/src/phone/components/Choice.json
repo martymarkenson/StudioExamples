@@ -1,0 +1,311 @@
+{
+  "attributes": {
+    "twx-widget": "",
+    "widget-id": "view-1",
+    "viewtype": "mobile-2D",
+    "widget-name": "view-1",
+    "is-widget-container": "true"
+  },
+  "children": [
+    {
+      "name": "twx-container-content",
+      "children": [
+        {
+          "attributes": {
+            "twx-widget": "",
+            "widget-id": "gridLayout-1",
+            "widget-name": "gridLayout-1",
+            "is-widget-container": "true"
+          },
+          "name": "twx-gridlayout",
+          "children": [
+            {
+              "name": "twx-container-content",
+              "children": [
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "row-5",
+                    "rowclass": "choiceHeader",
+                    "rowheight": "20vh",
+                    "widget-name": "row-5",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-row",
+                  "children": [
+                    {
+                      "name": "twx-container-content",
+                      "children": [
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "column-6",
+                            "widget-name": "column-6",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-col",
+                          "children": [
+                            {
+                              "name": "twx-container-content",
+                              "children": [
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "resourceImage-2",
+                                    "class": "logo",
+                                    "imgsrc": "Uploaded/logo.svg",
+                                    "width": "",
+                                    "widget-name": "resourceImage-1"
+                                  },
+                                  "name": "twx-image2"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "row-2",
+                    "rowheight": "20vh",
+                    "widget-name": "row-2",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-row",
+                  "children": [
+                    {
+                      "name": "twx-container-content",
+                      "children": [
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "column-3",
+                            "justification": "flex-end",
+                            "alignment": "center",
+                            "widget-name": "column-3",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-col",
+                          "children": [
+                            {
+                              "name": "twx-container-content",
+                              "children": [
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "label-1",
+                                    "text": "My ThingMark is on a:",
+                                    "class": "choicelabel",
+                                    "widget-name": "label-1"
+                                  },
+                                  "name": "twx-label"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "row-3",
+                    "rowclass": "choicemidrow",
+                    "rowheight": "5vh",
+                    "widget-name": "row-3",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-row",
+                  "children": [
+                    {
+                      "name": "twx-container-content",
+                      "children": [
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "column-4",
+                            "widget-name": "column-4",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-col",
+                          "children": [
+                            {
+                              "name": "twx-container-content"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "row-1",
+                    "rowclass": "choicerow",
+                    "widget-name": "row-1",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-row",
+                  "children": [
+                    {
+                      "name": "twx-container-content",
+                      "children": [
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "column-1",
+                            "alignment": "center",
+                            "widget-name": "column-1",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-col",
+                          "children": [
+                            {
+                              "name": "twx-container-content",
+                              "children": [
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "button-1",
+                                    "text": "Horizontal Surface (Table)",
+                                    "class": "horiz",
+                                    "widget-name": "button-1"
+                                  },
+                                  "name": "twx-button",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "eventbind-id": "eb-1483565632727",
+                                        "src-type": "widget",
+                                        "src-label": "Button",
+                                        "src-name": "button-1",
+                                        "src-event": "click",
+                                        "handler-namespace": "app",
+                                        "handler-name": "fn",
+                                        "handler-service": "navigate",
+                                        "handler": "app-fn-navigate"
+                                      },
+                                      "name": "twx-eventbind",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "name": "viewname",
+                                            "value": "Home"
+                                          },
+                                          "name": "twx-event-data"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "column-2",
+                            "alignment": "center",
+                            "widget-name": "column-2",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-col",
+                          "children": [
+                            {
+                              "name": "twx-container-content",
+                              "children": [
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "button-2",
+                                    "text": "Vertical Surface (Wall)",
+                                    "class": "vert",
+                                    "widget-name": "button-2",
+                                    "click-expression": "app.params.markerRotation = 0"
+                                  },
+                                  "name": "twx-button",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "eventbind-id": "eb-1483643644214",
+                                        "src-type": "widget",
+                                        "src-label": "Button",
+                                        "src-name": "button-2",
+                                        "src-event": "click",
+                                        "handler-namespace": "app",
+                                        "handler-name": "fn",
+                                        "handler-service": "navigate",
+                                        "handler": "app-fn-navigate"
+                                      },
+                                      "name": "twx-eventbind",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "name": "viewname",
+                                            "value": "Home"
+                                          },
+                                          "name": "twx-event-data"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "row-4",
+                    "rowclass": "choiceFooter",
+                    "widget-name": "row-4",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-row",
+                  "children": [
+                    {
+                      "name": "twx-container-content",
+                      "children": [
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "column-5",
+                            "widget-name": "column-5",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-col",
+                          "children": [
+                            {
+                              "name": "twx-container-content"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "twx-view-data"
+    }
+  ],
+  "name": "twx-view"
+}
