@@ -1,0 +1,55 @@
+{
+  "name": "Animated 3D Touchpoint",
+  "projectType": "AR",
+  "viewType": "ar",
+  "fileName": "Animated 3D Touchpoint",
+  "thingworxServer": "https://6ykhdhls.pp.vuforia.io",
+  "version": "1.25.1107",
+  "device": {
+    "name": "phone",
+    "width": "402px",
+    "height": "713px"
+  },
+  "state": {
+    "orientation": "portrait"
+  },
+  "targets": {
+    "phone": {
+      "components": [
+        {
+          "name": "Home",
+          "fileName": "Home",
+          "showInMainMenu": true,
+          "viewType": "ar",
+          "title": "Home"
+        }
+      ],
+      "images": []
+    },
+    "shared": {
+      "components": [
+        {
+          "name": "Data",
+          "fileName": "Data"
+        }
+      ],
+      "images": [],
+      "styles": [
+        {
+          "name": "App",
+          "fileName": "App",
+          "fileExt": "scss"
+        }
+      ],
+      "fragments": []
+    }
+  },
+  "mainNavigationMenuStyle": "noMenu",
+  "previewUrl": "/preview.html?project=${project}&format=${format}&orientation=${orientation}&phone=true",
+  "resourceDirectory": "src/phone/resources",
+  "resourceRuntimeDir": "app/resources",
+  "fontRuntimeDir": "../fonts",
+  "fontDesigntimeDir": "../dist/phone/fonts",
+  "theme": "twx-light",
+  "thumbnail": ""
+}
