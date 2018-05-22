@@ -1,0 +1,36 @@
+/*
+   Add additional application styles or override styles provided by the selected theme or widgets.
+   You can include SASS syntax, as this file is built to a css file using a SASS processor.
+
+   Available Variables:
+
+   Variable Name      Description
+   ----------------------------------------------------
+   $resources         References the directory where resources reside (images, etc.), this directory may be different
+                      between the design time and the runtime directory structure.
+
+                      Example: background-image: url(#{$resources}/Uploaded/image.png)
+
+   $font-path        References the relative directory where fonts are stored.
+*/
+
+.dark-popup{
+  background: rgba(0,0,0,0.9);
+}
+.white-label{
+  color: #fff;
+  &.title{
+    font-weight: bold;
+  }
+}
+.close-button{
+  background: #67b730;
+  color: #fff;
+  border: none;
+  &:active{
+    background: darken(#67b730, 20%);
+  }
+  &:hover{
+    color: #fff;
+  }
+}

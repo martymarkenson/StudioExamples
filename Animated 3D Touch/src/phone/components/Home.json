@@ -1,0 +1,240 @@
+{
+  "attributes": {
+    "twx-widget": "",
+    "widget-id": "view-1",
+    "viewtype": "ar",
+    "widget-name": "view-1",
+    "is-widget-container": "true"
+  },
+  "children": [
+    {
+      "name": "twx-container-content",
+      "children": [
+        {
+          "attributes": {
+            "twx-widget": "",
+            "widget-id": "x-f7d16695-c986-40e5-8b2f-85495a6b5867",
+            "widget-name": "3D Container",
+            "is-widget-container": "true"
+          },
+          "name": "twx-dt-view",
+          "children": [
+            {
+              "name": "twx-container-content",
+              "children": [
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "spatialTarget-1",
+                    "rx": "-90",
+                    "widget-name": "spatialTarget-1"
+                  },
+                  "name": "twx-dt-target-spatial"
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "3DImage-2",
+                    "src": "Uploaded/green_highlight2.png",
+                    "scale": "0.2500",
+                    "x": "0.0202",
+                    "y": "0.7844",
+                    "z": "0.0055",
+                    "rx": "0.00",
+                    "ry": "0.00",
+                    "rz": "0.00",
+                    "widget-name": "3DImage-2",
+                    "click-expression": "stopFlashing();"
+                  },
+                  "name": "twx-dt-image"
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "3DImage-1",
+                    "src": "Uploaded/touch_here4.png",
+                    "scale": "0.2500",
+                    "x": "-0.0521",
+                    "y": "0.8759",
+                    "z": "0.0055",
+                    "rx": "0.00",
+                    "ry": "0.00",
+                    "rz": "0.00",
+                    "widget-name": "3DImage-1",
+                    "click-expression": "stopFlashing();"
+                  },
+                  "name": "twx-dt-image"
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "3DImage-3",
+                    "src": "Uploaded/highlight1.png",
+                    "scale": "0.2500",
+                    "x": "0.0202",
+                    "y": "0.7844",
+                    "z": "0.0055",
+                    "rx": "0.00",
+                    "ry": "0.00",
+                    "rz": "0.00",
+                    "widget-name": "3DImage-3",
+                    "click-expression": "stopFlashing();"
+                  },
+                  "name": "twx-dt-image"
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "3DImage-4",
+                    "src": "Uploaded/highlight2.png",
+                    "scale": "0.2500",
+                    "x": "0.0202",
+                    "y": "0.7844",
+                    "z": "0.0055",
+                    "rx": "0.00",
+                    "ry": "0.00",
+                    "rz": "0.00",
+                    "widget-name": "3DImage-4",
+                    "click-expression": "stopFlashing();"
+                  },
+                  "name": "twx-dt-image"
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "3DImage-5",
+                    "src": "Uploaded/highlight3.png",
+                    "scale": "0.2500",
+                    "x": "0.0202",
+                    "y": "0.7844",
+                    "z": "0.0055",
+                    "rx": "0.00",
+                    "ry": "0.00",
+                    "rz": "0.00",
+                    "widget-name": "3DImage-5",
+                    "click-expression": "stopFlashing();"
+                  },
+                  "name": "twx-dt-image"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "attributes": {
+            "twx-widget": "",
+            "widget-id": "2DOverlay-1",
+            "widget-name": "2D Overlay",
+            "is-widget-container": "true"
+          },
+          "name": "twx-overlay",
+          "children": [
+            {
+              "name": "twx-container-content",
+              "children": [
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "panel-1",
+                    "position": "top",
+                    "widget-name": "Top Panel",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-overlay-container",
+                  "children": [
+                    {
+                      "name": "twx-container-content"
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "2DOverlayBody-1",
+                    "widget-name": "2D Body",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-overlay-body",
+                  "children": [
+                    {
+                      "name": "twx-container-content",
+                      "children": [
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "panel-2",
+                            "position": "left",
+                            "widget-name": "Left Panel",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-overlay-container",
+                          "children": [
+                            {
+                              "name": "twx-container-content"
+                            }
+                          ]
+                        },
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "panel-3",
+                            "position": "center",
+                            "widget-name": "Center Panel",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-overlay-container",
+                          "children": [
+                            {
+                              "name": "twx-container-content"
+                            }
+                          ]
+                        },
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "panel-4",
+                            "position": "right",
+                            "widget-name": "Right Panel",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-overlay-container",
+                          "children": [
+                            {
+                              "name": "twx-container-content"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "panel-5",
+                    "position": "bottom",
+                    "widget-name": "Bottom Panel",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-overlay-container",
+                  "children": [
+                    {
+                      "name": "twx-container-content"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "twx-fragment-parameters"
+    },
+    {
+      "name": "twx-view-data"
+    }
+  ],
+  "name": "twx-view"
+}
