@@ -1,0 +1,187 @@
+{
+  "attributes": {
+    "twx-widget": "",
+    "widget-id": "view-1",
+    "viewtype": "ar",
+    "widget-name": "view-1",
+    "is-widget-container": "true"
+  },
+  "children": [
+    {
+      "name": "twx-container-content",
+      "children": [
+        {
+          "attributes": {
+            "twx-widget": "",
+            "widget-id": "x-935dea06-b598-4294-ad1b-d7945052d9c7",
+            "widget-name": "3D Container",
+            "is-widget-container": "true"
+          },
+          "name": "twx-dt-view",
+          "children": [
+            {
+              "name": "twx-container-content",
+              "children": [
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "model-1",
+                    "src": "Uploaded/Mercedes-Benz_S-class.pvz",
+                    "widget-name": "model-1",
+                    "modelloaded-expression": "toggle()"
+                  },
+                  "name": "twx-dt-model"
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "modelTarget-1",
+                    "url": "_generated_/mtg/Mercedes-Benz_S-class-db793405-d10a-49f9-acf1-e6474ee917f8.png",
+                    "rx": "0",
+                    "model": "model-1",
+                    "detection-position": "{\"globalPosition\":{\"x\":-0.09496246355738844,\"y\":0.14716619057856628,\"z\":8.332995994651235},\"axisAngle\":{\"x\":-0.9364654751918713,\"y\":-0.45561452814218883,\"z\":1.3681145085450113,\"w\":2.6305156917208317},\"cameraLocation\":{\"position\":{\"x\":5.554053783416748,\"y\":5.607114791870117,\"z\":-2.679971694946289},\"orientation\":{\"x\":157.71170043945312,\"y\":70.21821594238281,\"z\":-159.417236328125},\"scale\":{\"x\":1.0000003576278687,\"y\":1,\"z\":1.000000238418579},\"size\":{\"x\":1.0000003576278687,\"y\":1,\"z\":1.000000238418579},\"valid\":false},\"modelScale\":1,\"origModelSize\":{\"x\":2.293288469314575,\"y\":1.5151588916778564,\"z\":5.308938980102539}}",
+                    "target-id": "db793405-d10a-49f9-acf1-e6474ee917f8",
+                    "widget-name": "modelTarget-1",
+                    "trackingacquired-expression": "pulse();"
+                  },
+                  "name": "twx-dt-target-model"
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "pulse",
+                    "widget-name": "pulse",
+                    "text": "<script name=\"pulse2\" type=\"x-shader/x-vertex\">\n      attribute vec4 vertexPosition;\n      attribute vec4 vertexNormal;\n\n      varying vec3 I;\n      varying vec3 N;\n      varying vec3 Y;\n\n      uniform mat4 modelViewProjectionMatrix;\n      uniform mat4 modelViewMatrix;\n      uniform mat4 modelMatrix;\n\n      void main() {\n        vec4 P       = modelViewMatrix * vertexPosition;\n        I                = P.xyz - vec3(0.);\n        Y               = vec3(modelMatrix * vertexPosition) ;\n        vec4 n       = vec4(vertexNormal.xyz, 0.0);\n        vec4 nn     = modelViewMatrix * n;\n        N               = nn.xyz;\n        gl_Position = modelViewProjectionMatrix * vertexPosition;\n      }\n\n</script>\n<script name=\"pulse2\" type=\"x-shader/x-fragment\">\n      precision mediump float; \n\n      varying vec3 I;\n      varying vec3 N;\n      varying vec3 Y;\n\n      uniform float tick;\n      float edgeFalloff = 1.0;\n      float intensity = 1.0;\n      float ambient = 0.8;\n      uniform float pulse;\n      uniform float vmy;\n      uniform float vdy;\n      void main() {\n          // hardcoded yellow - we could make this a parameter\n          vec4 color     = vec4(1.,1.,0.,0.);\n\n          float opacity  = abs(dot(normalize(-N), normalize(-I)));\n          opacity        = ambient + intensity*(1.0-pow(opacity,edgeFalloff));\n\n          // the effect here is to sweep a sine wave over the xray, altering the\n          // intensity (by modulating the transparency) as the sine wave\n          // progresses\n          float mt = mod(pulse, 3.14156);\n          float st  = sin(mt);\n          float ppy = ((Y.y - vmy) / vdy) - 0.5;\n          float ct = sin(mt + 3.1415 * ppy );\n          float alpha = ct ;\n\n          gl_FragColor   = opacity * color;\n          gl_FragColor.a = 0.8 * clamp(st * alpha, 0., 1.);\n      }\n\n</script>\n<script name=\"screendoor\" type=\"x-shader/x-fragment\">\n      precision mediump float; \n      void main() {\n          float fx = sin(gl_FragCoord.x/2.);\n          float fy = sin(gl_FragCoord.y/2.);\n          float alpha = fx*fy;\n          if (alpha < 0.) discard; else gl_FragColor = vec4(fx,fy,alpha,0.);\n        }\n    </script>        \n    <script name=\"screendoor\" type=\"x-shader/x-vertex\">\n      attribute vec4 vertexPosition;\n      uniform mat4 modelViewProjectionMatrix;\n      void main() {\n        gl_Position = modelViewProjectionMatrix * vertexPosition;\n      }\n    </script>"
+                  },
+                  "name": "twx-tml-text",
+                  "children": [
+                    {
+                      "attributes": {
+                        "name": "text"
+                      },
+                      "name": "twx-widget-property-value"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "attributes": {
+            "twx-widget": "",
+            "widget-id": "2DOverlay-1",
+            "widget-name": "2D Overlay",
+            "is-widget-container": "true"
+          },
+          "name": "twx-overlay",
+          "children": [
+            {
+              "name": "twx-container-content",
+              "children": [
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "panel-1",
+                    "position": "top",
+                    "widget-name": "Top Panel",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-overlay-container",
+                  "children": [
+                    {
+                      "name": "twx-container-content"
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "2DOverlayBody-1",
+                    "widget-name": "2D Body",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-overlay-body",
+                  "children": [
+                    {
+                      "name": "twx-container-content",
+                      "children": [
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "panel-2",
+                            "position": "left",
+                            "widget-name": "Left Panel",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-overlay-container",
+                          "children": [
+                            {
+                              "name": "twx-container-content"
+                            }
+                          ]
+                        },
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "panel-3",
+                            "position": "center",
+                            "widget-name": "Center Panel",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-overlay-container",
+                          "children": [
+                            {
+                              "name": "twx-container-content"
+                            }
+                          ]
+                        },
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "panel-4",
+                            "position": "right",
+                            "widget-name": "Right Panel",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-overlay-container",
+                          "children": [
+                            {
+                              "name": "twx-container-content"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "panel-5",
+                    "position": "bottom",
+                    "widget-name": "Bottom Panel",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-overlay-container",
+                  "children": [
+                    {
+                      "name": "twx-container-content"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "twx-fragment-parameters"
+    },
+    {
+      "name": "twx-view-data"
+    }
+  ],
+  "name": "twx-view"
+}
