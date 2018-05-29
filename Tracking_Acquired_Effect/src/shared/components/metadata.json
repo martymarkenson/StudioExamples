@@ -1,0 +1,35 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "requires": [
+    "w320dp"
+  ],
+  "experiences": [
+    {
+      "vumark": "534:3",
+      "experienceType": "vumark",
+      "id": 1,
+      "index-keys": [
+        "urn:vuforia:vumark:534:3"
+      ],
+      "title": {
+        "en": "Tracking Acquired Effect"
+      },
+      "description": {
+        "en": "",
+        "en-US": ""
+      },
+      "requires": [
+        "AR-tracking"
+      ],
+      "tags": [],
+      "icon": "",
+      "viewName": "Home",
+      "url-template": "index.html?expId=1#/?thing={{thingworx:thing}}&vumark={{vuforia:vumark}}",
+      "entryPoint": "index.html?expId=1#/",
+      "thumbnail": ""
+    }
+  ],
+  "accessType": "public",
+  "designedfor": []
+}
