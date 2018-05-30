@@ -11,3 +11,5 @@
 #-- re-ignore default resources
 /src/phone/resources/Default/**
 #-- END OOTB GITIGNORE --#
+!README.md
+!snippet_pdf.png
