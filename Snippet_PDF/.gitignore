@@ -12,4 +12,4 @@
 /src/phone/resources/Default/**
 #-- END OOTB GITIGNORE --#
 !README.md
-!snippet_pdf.png
+!snippet_pdf.gif
