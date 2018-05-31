@@ -1,0 +1,51 @@
+/*
+   Add additional application styles or override styles provided by the selected theme or widgets.
+   You can include SASS syntax, as this file is built to a css file using a SASS processor.
+
+   Available Variables:
+
+   Variable Name      Description
+   ----------------------------------------------------
+   $resources         References the directory where resources reside (images, etc.), this directory may be different
+                      between the design time and the runtime directory structure.
+
+                      Example: background-image: url(#{$resources}/Uploaded/image.png)
+
+   $font-path        References the relative directory where fonts are stored.
+*/
+
+
+
+.relativewidth {
+  width: 50vw;
+  heigth: 50vw;
+  
+}
+
+
+.table{
+   background-color: rgb(0, 50, 50);
+   border-radius: 2vw 2vw 0 0;
+}
+
+
+.header {
+  font-size: 5vmin;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.label1 {
+  margin: 1vw;
+  width: 5vw;
+  
+  
+}
+
+.image1 {
+  width: 3vw;
+  heigth: auto;
+   
+}
+
+//calc(27vmax*(5/3)) also possible
