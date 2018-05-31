@@ -1,0 +1,53 @@
+{
+  "name": "responsive",
+  "projectType": "AR",
+  "viewType": "ar",
+  "fileName": "responsive",
+  "thingworxServer": "http://192.168.0.18:2019",
+  "version": "1.26.1124",
+  "device": {
+    "name": "phone",
+    "width": "713px",
+    "height": "402px"
+  },
+  "state": {
+    "orientation": "landscape"
+  },
+  "targets": {
+    "phone": {
+      "components": [
+        {
+          "name": "Home",
+          "fileName": "Home",
+          "showInMainMenu": true,
+          "viewType": "ar",
+          "title": "Home"
+        }
+      ],
+      "images": []
+    },
+    "shared": {
+      "components": [
+        {
+          "name": "Data",
+          "fileName": "Data"
+        }
+      ],
+      "images": [],
+      "fragments": [],
+      "styles": [
+        {
+          "name": "App",
+          "fileName": "App",
+          "fileExt": "scss"
+        }
+      ]
+    }
+  },
+  "mainNavigationMenuStyle": "leftSideMenu",
+  "resourceDirectory": "src/phone/resources",
+  "resourceRuntimeDir": "app/resources",
+  "fontRuntimeDir": "../fonts",
+  "fontDesigntimeDir": "../dist/phone/fonts",
+  "theme": "twx-light"
+}
