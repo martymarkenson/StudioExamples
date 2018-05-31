@@ -1,0 +1,22 @@
+2018-05-29T10:10:41.451Z - debug: [twx-studio:upgrade:Snippet_PDF] Begin upgrade of project Snippet_PDF
+2018-05-29T10:10:41.452Z - info: [twx-studio:upgrade:Snippet_PDF] Upgrading project Snippet_PDF C:\Users\mvonhasselbach\Documents\ThingWorxStudio\Projects\Snippet_PDF from 8.2.3.3224 (1.25.1107) to 8.2.3.3224 (1.25.1107)
+2018-05-29T10:10:41.585Z - debug: [twx-studio:upgrade:Snippet_PDF] Make sure there are not any stale files lying around
+2018-05-29T10:10:41.586Z - debug: [twx-studio:upgrade:Snippet_PDF] Removing  C:\Users\mvonhasselbach\Documents\ThingWorxStudio\Projects\Snippet_PDF/src/phone/resources/Default/
+2018-05-29T10:10:41.649Z - debug: [twx-studio:upgrade:Snippet_PDF] Create .gitignore for project dir
+2018-05-29T10:10:41.656Z - debug: [twx-studio:upgrade:Snippet_PDF] Copying /src/**/* to project, overwrite=false
+2018-05-29T10:10:41.659Z - debug: [twx-studio:upgrade:Snippet_PDF] Copying /**/* to project, skip /src/**/*,  overwrite=true
+2018-05-29T10:10:41.882Z - debug: [twx-studio:upgrade:Snippet_PDF] Copy of project files complete
+2018-05-29T10:10:41.882Z - debug: [twx-studio:upgrade:Snippet_PDF] Updating version to  8.2.3.3224 (1.25.1107)
+2018-05-29T10:10:41.882Z - debug: [twx-studio:upgrade:Snippet_PDF] onupgrade sucessful, now build the project
+2018-05-29T10:10:41.883Z - debug: [twx-studio:upgrade:Snippet_PDF] BEGIN buildApp Snippet_PDF_1527588641883
+2018-05-29T10:10:41.883Z - debug: [twx-studio:upgrade:Snippet_PDF] write settings
+2018-05-29T10:10:41.886Z - debug: [twx-studio:upgrade:Snippet_PDF] copy runtime extensions
+2018-05-29T10:10:42.690Z - debug: [twx-studio:upgrade:Snippet_PDF] packageThemeSet
+2018-05-29T10:10:44.127Z - debug: [twx-studio:upgrade:Snippet_PDF] onBuild
+2018-05-29T10:10:44.127Z - info: [twx-studio:upgrade:Snippet_PDF] Building ves-ar-extension app: Snippet_PDF
+2018-05-29T10:10:52.426Z - debug: [twx-studio:upgrade:Snippet_PDF] pathDir C:\Users\mvonhasselbach\Documents\ThingWorxStudio\Projects\Snippet_PDF
+2018-05-29T10:10:52.426Z - debug: [twx-studio:upgrade:Snippet_PDF] scaffoldDir C:\Users\mvonhasselbach\Documents\ThingWorxStudio\Projects\node_modules\ves-ar-extension\src\src-scaffold
+2018-05-29T10:10:52.426Z - debug: [twx-studio:upgrade:Snippet_PDF] copySrc
+2018-05-29T10:10:55.857Z - debug: [twx-studio:upgrade:Snippet_PDF] buildApp
+2018-05-29T10:10:56.136Z - debug: [twx-studio:upgrade:Snippet_PDF] END buildApp Snippet_PDF_1527588641883
+2018-05-29T10:10:56.136Z - debug: [twx-studio:upgrade:Snippet_PDF] Build succeeded.
